@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ clrscr();
+ int a=5;
+ printf("%d",a);
+ printf("\n%X",&a);
+ printf("\n%x",&a);
+ printf("\n%p",&a);
+ printf("\n%u",&a);
+ printf("\n%d",*&a);
+}

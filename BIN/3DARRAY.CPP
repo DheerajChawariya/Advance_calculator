@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+ int a[50][20][20],i,j,k,p,r[20],c[20];
+ printf("enter how many matrix want to be created\n");
+ scanf("%d",&p);
+ for(i=0;i<p;i++)
+ {
+  printf("enter how many row & coloum in matrix number=%d\n",i+1);
+  scanf("%d%d",&r[i],&c[i]);
+  printf("enter values into matrix number=%d\n",i+1);
+  for(j=0;j<r[i];j++)
+  {
+   for(k=0;k<c[i];k++)
+   {
+    scanf("%d",&a[i][j][k]);
+   }
+  }
+ }
+ for(i=0;i<p;i++)
+ {
+  printf("\nmatrix number %d display\n",i+1);
+  for(j=0;j<r[i];j++)
+  {
+   for(k=0;k<c[i];k++)
+   {
+    printf("%5d",a[i][j][k]);
+   }
+   printf("\n");
+  }
+ }
+ getch();
+}
+
+

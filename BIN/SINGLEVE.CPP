@@ -1,0 +1,34 @@
+/*WAP single level inheritance*/
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+ public:
+ int a;
+ void fun(int n)
+ {
+  a=n;
+ }
+};
+class memo:public demo
+{
+ public:
+ int b;    //   demo::a
+ void fun1(int m)    // demo::fun(int n)
+ {
+  b=m;
+ }
+ void display()
+ {
+  cout<<"a="<<a<<" b="<<b<<endl;
+ }
+};
+void main()
+{
+ clrscr();
+ memo m;
+ m.fun(5);
+ m.fun1(6);
+ m.display();
+}
+

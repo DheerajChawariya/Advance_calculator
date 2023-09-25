@@ -1,0 +1,10 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+ clrscr();
+ char ch[20];
+ cout<<"enter string\n";
+ cin.getline(ch,5,'\n');
+ cout<<ch;
+}                  //cin.getline(character array,size,delimeter character);

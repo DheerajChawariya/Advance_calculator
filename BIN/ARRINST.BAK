@@ -1,0 +1,30 @@
+/*WAP array used inside structure*/
+#include<iostream.h>
+#include<conio.h>
+struct demo
+{
+ int a[5];
+ char str[30];
+}o={5,6,8,9,3,"ramu"},o1={{3,7,8},{'a','l','o','k','\0'}};
+void main()
+{
+clrscr();
+ cout<<"object o=\n";       //printf("object o=\n");
+ int i;
+ for(i=0;i<5;i++)
+ {
+  cout<<o.a[i]<<" ";          //printf("%d ",o.a[i]);
+ }
+ cout<<"\t"<<o.str;             //   printf("\t%s",o.str);
+
+ cout<<"\n\nobject o1=\n";          //     printf("\n\nobject o1=\n");
+ for(i=0;i<5;i++)
+ {                                  //     printf("%d ",o1.a[i]);
+  cout<<o1.a[i]<<" ";
+ }                                 //printf("\t%s",o1.str);
+ cout<<"\t"<<o1.str;
+ }
+
+
+
+

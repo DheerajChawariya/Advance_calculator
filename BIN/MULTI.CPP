@@ -1,0 +1,77 @@
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdlib.h>
+void main()
+{
+clrscr();
+int a[50][50],b[50][50],c[50][50],r,r1,c1,r2,c2,i,j,k;
+cout<<"enter how many row and coloum insert into matrix first\n";
+cin>>r1>>c1;
+cout<<"enter how many row and coloum insert into matrix second\n";
+cin>>r2>>c2;
+if(c1==r2)
+cout<<"multiplication possible";
+else
+{
+cout<<"not";
+exit(0);
+}
+cout<<"\nenter values into first matrix\n";
+for(i=0;i<r1;i++)
+ {
+   for(j=0;j<c1;j++)
+     {
+      cin>>a[i][j];
+     }
+ }
+ cout<<"enter values into second matrix\n";
+  for(i=0;i<r2;i++)
+ {
+   for(j=0;j<c2;j++)
+     {
+      cin>>b[i][j];
+     }
+ }
+for(i=0;i<r1;i++)     //multiplication of two matrix
+ {
+ for(j=0;j<c2;j++)
+ {
+  c[i][j]=0;
+   for(k=0;k<c1;k++)
+  {
+    c[i][j]=c[i][j]+a[i][k]*b[k][j];
+  }
+ }
+}
+cout<<"\nfirst matrix display\n";
+ for(i=0;i<r1;i++)
+  {
+   for(j=0;j<c1;j++)
+     {
+       cout<<a[i][j]<<" ";
+     }
+   cout<<"\n";
+  }
+ cout<<"\nsecond matrix display\n";
+ for(i=0;i<r2;i++)
+  {
+   for(j=0;j<c2;j++)
+     {
+       cout<<b[i][j]<<" ";
+     }
+   cout<<"\n";
+  }
+cout<<"\nthird matrix display\n";
+ for(i=0;i<r1;i++)
+  {
+   for(j=0;j<c2;j++)
+     {
+       cout<<c[i][j]<<" ";
+     }
+   cout<<"\n";
+  }
+  getch();
+
+
+}

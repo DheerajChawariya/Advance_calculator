@@ -1,0 +1,33 @@
+/*WAp to insertion sorting second method*/
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a[50],n,i,j,t,k;
+ clrscr();
+ printf("enter how many content insert into array list\n");
+ scanf("%d",&n);
+
+for(i=0;i<n;i++)
+ {
+  printf("\nenter %d number\n",i+1);
+  scanf("%d",&a[i]);
+  j=i-1;
+  t=a[i];
+  clrscr();
+  while(j>=0&&t<a[j])
+  {
+   a[j+1]=a[j];
+   j--;
+  }
+ a[j+1]=t;
+ printf("\nafter new value inserted list display\n");
+   for(k=0;k<=i;k++)
+   {
+    printf(" %d",a[k]);
+   }
+ }
+ getch();
+}
+
+

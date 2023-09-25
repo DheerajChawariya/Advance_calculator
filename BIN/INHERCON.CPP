@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+ public:
+ demo()
+ {
+  cout<<"\nconstructor in demo";
+ }
+};
+class memo:public demo
+{
+ public:
+ memo()     //memo():demo()
+ {
+ cout<<"\nconstructor in memo\n";
+ }
+};
+main()
+{
+ clrscr();
+ memo m;
+}
+

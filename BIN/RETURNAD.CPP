@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include"stdio.h"
+#include<conio.h>
+int* fun()
+{
+ int a,b;
+ cout<<"enter two number";    //printf("entr two number");
+ cin>>a>>b;     //scanf("%d%d",&a,&b);
+ if(a>b)
+ return &a;
+ else
+ return &b;
+}
+void main()
+{
+ clrscr();
+// cout<<"maximum value="<<*(fun());
+int *p=fun();
+printf("%d",*p);
+}                         //printf("maximum value=%d",*(fun()));

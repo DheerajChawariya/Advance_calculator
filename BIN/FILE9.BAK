@@ -1,0 +1,24 @@
+#include<conio.h>
+#include<fstream.h>
+#include<stdlib.h>
+void main()
+{
+clrscr();
+ ifstream fin("notes.txt",ios::in);
+ if(!fin)
+ {
+  cout<<"not exist";
+  exit(0);
+ }
+ char ch[80];
+ int count=0;
+ while(fin)
+ {
+  fin.getline(ch,80,'\n');           //fin.getline(ch,80);
+  if(fin.eof())
+  break;
+  cout<<ch;
+  count++;
+ }
+ cout<<"\ncount of line="<<count;
+ }

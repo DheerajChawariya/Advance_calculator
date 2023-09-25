@@ -1,0 +1,16 @@
+#include<conio.h>
+#include"stdio.h"
+void add(int n,int m)
+{
+ printf("\nadd=%d",n+m);
+}
+void main()
+{
+clrscr();
+int a,b;
+printf("\nenter two number");
+scanf("%d%d",&a,&b);
+add(a,b);
+add(6,7);
+getch();     //add(a,b)  add(6,7)  here a,b,6,7 is a actual argument
+}

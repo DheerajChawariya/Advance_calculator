@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+int a,b;
+ public:
+ void fun(int a,int b)
+ {
+ this->a=a;
+ this->b=b;
+ }
+ friend void max(demo &t)
+ {
+ if(t.a>t.b)
+ cout<<t.a<<" is greater";
+ else
+ cout<<t.b<<" is greater";
+ }
+};
+void main()
+{
+ clrscr();
+ demo o;
+ o.fun(5,7);
+ max(o);
+}

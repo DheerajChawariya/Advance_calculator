@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void fun()//before calling behave like thatprototype after calling behave like that called function
+{
+ printf("\nhello friend");
+}
+void fun1() //called function(defination)
+{
+  printf("\nhow are you");
+}
+void main()
+{
+ clrscr();
+ printf("\nstarting in main()");
+ fun1();  //calling function
+ fun();
+ printf("\nend task");
+ getch();
+}

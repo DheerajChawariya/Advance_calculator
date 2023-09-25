@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+void fun(int a=34,int b=3,int c=2)
+{
+ cout<<a<<" "<<b<<" "<<c<<endl;
+}
+void main()
+{
+clrscr();
+fun();
+fun(5);
+fun(1,7);
+fun(12,10,89);
+}

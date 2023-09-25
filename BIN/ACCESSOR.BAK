@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+ int a,b;
+ public:
+ void fun(int a,int b)  //normal function
+ {
+  this->a=a;
+  (*this).b=b;
+ }
+ int geta() //accessor function
+ {
+  return a;
+ }
+ int getb() //accessor function
+ {
+  return b;
+ }
+};
+void main()
+{
+ clrscr();
+ demo d,o;
+ d.fun(6,7);
+ cout<<"a="<<d.geta()<<"\tb="<<d.getb()<<endl;
+ o.fun(3,89);
+ cout<<"a="<<o.geta()<<"\tb="<<o.getb();
+
+ }

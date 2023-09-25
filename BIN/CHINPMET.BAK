@@ -1,0 +1,163 @@
+#include<stdio.h>
+#include<conio.h>
+
+
+void main()
+{
+clrscr();
+int A=65;
+char ch=A,data='B',val='a';
+printf("%c %c %c",ch,data,val);
+printf("\n%d %d %d",ch,data,val);
+printf("\n%d %c",A,A);
+getch();
+}
+
+
+
+
+/*
+void main()
+{
+ clrscr();
+ char ch,ch1,ch2;
+ printf("enter first chacter\n");
+ scanf("%c",&ch);
+ //fflush(stdin);
+ printf("enter second character\n");
+ scanf("%c",&ch1);
+ //fflush(stdin);
+ printf("enter third character\n");
+ scanf("%c",&ch2);
+ printf("%c %c %c",ch,ch1,ch2);
+}
+*/
+
+
+/*
+void main()
+{
+ clrscr();
+ char ch,ch1,ch2;
+ printf("enter first chacter\n");
+ ch=getchar();
+ fflush(stdin);
+ printf("enter second character\n");
+ ch1=getchar();
+ fflush(stdin);
+ printf("enter third character\n");
+ ch2=getchar();
+ printf("%c %c %c",ch,ch1,ch2);
+}
+/*
+
+
+
+/*
+void main()
+{
+
+clrscr();
+ char ch,ch1,ch2;
+ printf("enter first chacter\n");
+ scanf("%c",&ch);
+ fflush(stdin);
+ printf("enter second character\n");
+ scanf("%c",&ch1);
+ fflush(stdin);
+ printf("enter third character\n");
+ scanf("%c",&ch2);
+ //printf("%c %c %c",ch,ch1,ch2);
+ putchar(ch); //putch(ch);     //printf("%c",ch);
+ putchar(' '); //putch(' ');   //printf(" ");
+ putchar(ch1); //putch(ch1);    //printf("%c",ch1);
+ putchar(32);  //putch(32);  //printf("%c",32);  //printf("%c",' ');
+ putchar(ch2); //putch(ch2);   //printf("%c",ch2);
+}
+*/
+
+
+
+/*
+void main()
+{
+ clrscr();
+ char ch,ch1,ch2;
+ printf("enter three chacter\n");
+ scanf("%c%c%c",&ch,&ch1,&ch2);
+ printf("%c %c %c",ch,ch1,ch2);
+}
+*/
+
+
+
+
+/*
+void main()
+{
+ clrscr();
+ char ch,ch1,ch2;
+ printf("enter first chacter\n");
+ ch=getch();
+ printf("*");
+ printf("\nenter second character\n");
+ ch1=getch();
+ printf("*");
+ printf("\nenter third character\n");
+ ch2=getch();
+ printf("*");
+ printf("\n%c %c %c",ch,ch1,ch2);
+ getch();
+}
+*/
+
+
+
+/*
+void main()
+{
+ clrscr();
+ char ch,ch1,ch2;
+ printf("enter first chacter\n");
+ ch=getche();
+ printf("*");
+ printf("\nenter second character\n");
+ ch1=getche();
+ printf("*");
+ printf("\nenter third character\n");
+ ch2=getche();
+ printf("*");
+ printf("\n%c %c %c",ch,ch1,ch2);
+getch();
+}
+*/
+
+
+
+/*
+void main()
+{
+ clrscr();
+ int ch,ch1,ch2;
+ printf("enter first value\n");
+ scanf("%d",&ch);
+ fflush(stdin);
+ printf("enter second value\n");
+ scanf("%d",&ch1);
+ fflush(stdin);
+ printf("enter third value\n");
+ scanf("%d",&ch2);
+ printf("%d %d %d",ch,ch1,ch2);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void fun()
+{
+ printf("hello");
+ return;
+ printf("friend");
+}
+void main()
+{
+clrscr();
+int a=fun();
+getch();
+}
+
+
+
+
+
+
+
+
+
+
+

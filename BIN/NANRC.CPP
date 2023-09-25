@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void fun();
+void fun1();
+void main()
+{
+ clrscr();
+ printf("\nstarting in main()");
+ fun();
+ fun1();
+ printf("\nending in main");
+ getch();
+ }
+void fun() //called function(defination)
+{
+ printf("\nhello friend");
+ }
+void fun1() //called function(defination)
+{
+  printf("\nhow are you");
+}
+

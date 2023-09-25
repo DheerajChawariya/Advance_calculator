@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+void main()
+{
+ clrscr();
+ char str[50],ch;
+ int v=0,c=0,al=0,d=0,s=0,ot=0,total=0;
+ printf("enter string\n");
+ gets(str);
+ for(int i=0;str[i]!=NULL;i++)
+ {
+  total++;
+   if(isalpha(str[i]))
+   {
+    al++;
+    ch=toupper(str[i]);
+    if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+    v++;
+    else
+    c++;
+   }
+   else if(isdigit(str[i]))
+   d++;
+   else if(isspace(str[i]))
+   s++;
+   else
+   ot++;
+ }
+ printf("total character=%d",total);
+ printf("\nnumber of alphabet character=%d",al);
+ printf("\nnumber of vowel character=%d",v);
+ printf("\nnumber of consonant character=%d",c);
+ printf("\nnumber of digit character=%d",d);
+ printf("\nnumber of space=%d",s);
+ printf("\nnumber of other special character=%d",ot);
+}

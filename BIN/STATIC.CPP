@@ -1,0 +1,28 @@
+#include<stdio.h>                                                                                                                                                                                                                                                                                                                                                                                     kjjgkfdgfds g ds f gmdsfg  ds
+#include<conio.h>
+void fun()
+{
+ auto int a=5;
+ printf("\n%d",a++);
+}
+main()
+{
+ clrscr();
+ fun();
+ fun();
+ fun();
+ getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
