@@ -1,4 +1,0 @@
-name=praveen
-city=kota
-state=raj
-mobno=85464554
